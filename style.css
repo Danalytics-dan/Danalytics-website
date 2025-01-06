@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the canvas is behind the content */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Keep content in front of the canvas */
+    text-align: center;
+    padding-top: 100px;
+    color: #fff;
+}
+
+
+
+
+body{
+    background-color: #0b0c10;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+nav a{
+    text-decoration: none;
+}
+.box{
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 200px;
+    height: 60px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 20px;
+    color: #66FCF1;
+    background-color: #1F2833;
+}
+
+#contact:hover{
+    background-color: #333333;
+    animation-name: hoverglow;
+    animation-duration: 3s;
+}
+
+#about:hover{
+    background-color: #333333;
+    animation-name: hoverglow;
+    animation-duration: 3s;
+}
+
+main{
+    color: #45A29E;
+}
+
+main span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main span img{
+    height: 100px;
+    border-radius: 30px;
+    margin-top: 40px;
+}
+
+main h1{
+    color: #66FCF1;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    text-shadow: 0px 0px 4px rgba(0, 225, 255, 0.726);
+    font-size: 60px;
+    padding-right: 20px;
+}
+
+main h2{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 40px;
+}
+
+.skills {
+    display:flex;
+    height: 100px;
+    border-radius: 30px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px
+    
+}
+
+.skillnames {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#htmlname{
+    position: relative;
+    right: 10px;
+}
+
+#cssname{
+    position: relative;
+    left: 10px;
+}
+
+
+main p{
+    padding: 40px;
+
+}
+
+
+@keyframes hoverglow{
+    90% {
+        box-shadow: 0 0 10px yellow;
+        translate: 0px 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
